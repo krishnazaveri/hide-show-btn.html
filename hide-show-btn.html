@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hide-show-paragraph</title>
+
+    <style>
+        p{
+            margin: 30px 0px;
+            padding: 15px;
+            background-color: lightblue;
+            width: 50%;
+        }
+
+        button {
+            margin: 20px;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, porro culpa animi praesentium, sint magni impedit cumque molestiae, architecto dolorum vero? Dolore atque exercitationem alias cum sed dolor fuga labore.</p>
+    
+    <button onclick="hide()">Hide</button>
+    <button onclick="show()">Show</button>
+
+
+    <p id="para1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, porro culpa animi praesentium, sint magni impedit cumque molestiae, architecto dolorum vero? Dolore atque exercitationem alias cum sed dolor fuga labore.</p>
+    
+    <button onclick="hide1()">Hide</button>
+    <button onclick="show1()">Show</button>
+
+    <script>
+        p = document.getElementById("para");
+        p1 = document.getElementById("para1");
+
+        function hide()
+        {
+            p.style.display="none"
+        }
+
+        function show()
+        {
+            p.style.display="block"
+        }
+
+        function hide1()
+        {
+            p1.style.visibility="hidden"
+        }
+
+        function show1()
+        {
+            p1.style.visibility="visible"
+        }
+
+
+    </script>
+
+</body>
+</html>
